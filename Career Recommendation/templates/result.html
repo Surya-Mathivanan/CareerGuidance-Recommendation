@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eaf7ff;
+            background-image: url("https://images.prismic.io//intuzwebsite/d9daef05-a416-4e84-b0f8-2d5e2e3b58d8_A+Comprehensive+Guide+to+Building+an+AI+Chatbot%402x.png?w=2400&q=80&auto=format,compress&fm=png8"); /* Path to your background image */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center; 
+            height: 100vh; 
+            margin: 0;
+            padding: 20px;
+        }
+        .result-container {
+            max-width: 700px;
+            margin: auto;
+            background: rgba(140, 181, 243, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        .recommendation {
+            margin-top: 20px;
+        }
+        ul {
+            list-style: disc;
+            margin-left: 20px;
+        }
+        a {
+            color: #0065ca;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-container">
+        <h2>Your Career Recommendations</h2>
+        <div class="recommendation">
+            {{ recommendation | safe }}
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="/">Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Guidance Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url("https://img.freepik.com/premium-photo/photo-realistic-as-ai-chatbot-customer-engagement-concept-as-ai-chatbot-icon-paired-with-cu_980716-459305.jpg") no-repeat center center fixed; /* Correct path to your image */
+            background-size: cover; 
+            height: 100vh; 
+            margin: 0;
+            padding: 20px;
+        }
+
+        .form-container {
+            max-width: 500px;
+            margin: auto;
+            background: rgba(140, 181, 243, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        select, input[type="text"], button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        button {
+            background-color: white;
+            color: #0065ca;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        button:hover {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Career Guidance Chatbot</h2>
+        <form action="/recommend" method="post">
+            <label for="grades">Select Your Grade Range:</label>
+            <select id="grades" name="grades" required>
+                <option value="">Select your grade range</option>
+                <option value="80-85">80-85</option>
+                <option value="86-90">86-90</option>
+                <option value="91-95">91-95</option>
+                <option value="96-100">96-100</option>
+            </select>
+
+            <label for="interests">What are your interests?</label>
+            <select id="interests" name="interests" required>
+                <option value="">Select your interest</option>
+                <option value="math">Math</option>
+                <option value="science">Science</option>
+                <option value="art">Art</option>
+            </select>
+
+            <label for="goal">What is your career goal?</label>
+            <select id="goal" name="goal" required>
+                <option value="">Select your goal</option>
+                <option value="engineer">Engineer</option>
+                <option value="scientist">Scientist</option>
+                <option value="artist">Artist</option>
+            </select>
+
+            <label for="preferred_study">Select your preferred study method:</label>
+            <select id="preferred_study" name="preferred_study" required>
+                <option value="online">Online</option>
+                <option value="classroom">Classroom</option>
+            </select>
+
+            <button type="submit">Get Recommendations</button>
+        </form>
+    </div>
+</body>
+</html>
