@@ -16,45 +16,10 @@ This is a career guidance recommendation designed to help 12th-grade students ex
 - **HTML/CSS**: Frontend built using HTML for structure and CSS for styling.
 - **Jinja2 Templating**: Used within Flask to render dynamic content in HTML pages.
 
-## Installation
-
-1. Clone the repository to your local machine:
-
-    ```bash
-    git clone https://github.com/yourusername/career-guidance-chatbot.git
-    ```
-
-2. Navigate to the project directory:
-
-    ```bash
-    cd career-guidance-chatbot
-    ```
-
-3. Create a virtual environment and activate it:
-
-    ```bash
-    python3 -m venv venv
-    source venv/bin/activate  # For Windows: venv\Scripts\activate
-    ```
-
-4. Install the required dependencies:
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-5. Run the application:
-
-    ```bash
-    python app.py
-    ```
-
-6. Open your web browser and go to `http://127.0.0.1:5000/`.
-
 ## Project Structure
 
 ```bash
-career-guidance-chatbot/
+career-guidance-recommendation/
 │
 ├── templates/
 │   ├── index.html          # Main user input form
@@ -68,6 +33,7 @@ career-guidance-chatbot/
 ├── requirements.txt        # Project dependencies
 ├── README.md               # Project documentation
 └── .gitignore              # Git ignore file
+```
 
 ## Output:
 ### user input page:
